@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../features/userSlice';
 
@@ -9,7 +9,7 @@ const Message = ({ id, text, avatar, umane, timestamp }) => {
     return (
         <div>
             {
-                id == user.uid ? (
+                id === user.uid ? (
                     <div>
                         <div className='flex justify-end pl-2 pr-2 pt-1'>
                             <h3
@@ -36,6 +36,7 @@ const Message = ({ id, text, avatar, umane, timestamp }) => {
                             <img
                                 className='mt-6 w-10 h-10 rounded-full'
                                 src={avatar}
+                                alt="Sent user avatar"
                             />
                             <div className=''>
                                 <h3 className='shadow-2xl bg-slate-400 p-2 rounded-2xl w-fit max-w-md'>
