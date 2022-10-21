@@ -9,7 +9,7 @@ import PingUpLogo from './assets/pingupLogo.png';
 
 const App = () => {
 
-  const [height, width] = WindowSize();
+  const [width] = WindowSize();
   const user = useSelector(selectUser);
 
   return (
