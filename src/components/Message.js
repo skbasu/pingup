@@ -13,7 +13,7 @@ const Message = ({ id, text, avatar, umane, timestamp }) => {
                     <div>
                         <div className='flex justify-end pl-2 pr-2 pt-1'>
                             <h3
-                                className='shadow-2xl bg-blue-700 text-white p-2 rounded-2xl w-fit max-w-md cursor-pointer'>
+                                className='shadow-2xl bg-blue-700 text-white p-2 rounded-2xl w-fit max-w-md'>
                                 {text}
                             </h3>
                         </div>
